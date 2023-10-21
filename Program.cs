@@ -107,6 +107,15 @@ double Divisao(double dividendo, double divisor)
     }
 }
 
+double subtracao(double numero01,double numero02)
+{return numero01 - numero02;
+}
+
+double multiplicacao(double numero01,double numero02)
+{return numero01 + numero02;
+}
+
+
 double ExecutaOperacao(string operacao, double numero01, double numero02)
 {
     double resultado = 0;
@@ -117,7 +126,7 @@ double ExecutaOperacao(string operacao, double numero01, double numero02)
             Console.Write("O valor da soma é: ");
             break;
         case "-":
-            resultado = numero01 - numero02;
+            resultado = subtracao(numero01, numero02);
             Console.Write("O valor da subtração é: ");
             break;
         case "/":
@@ -125,7 +134,7 @@ double ExecutaOperacao(string operacao, double numero01, double numero02)
             Console.Write("O valor da divisão é: ");
             break;
         case "*":
-            resultado = numero01 * numero02;
+            resultado = multiplicacao(numero01, numero02);
             Console.Write("O valor da multiplicação é: ");
             break;
         case "^":
